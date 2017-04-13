@@ -34,7 +34,7 @@ defmodule EmailTest.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
-     {:bamboo, "~> 0.8.0"},
-     {:bamboo_smtp, "~> 1.3"}]
+     {:bamboo, github: "andrewtimberlake/bamboo", ref: "f4f81d5", override: true},
+     {:bamboo_smtp, github: "Ghouli/bamboo_smtp", ref: "35619f5"}]
   end
 end

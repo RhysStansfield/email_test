@@ -19,8 +19,8 @@ config :email_test, EmailTest.Mailer,
   port: 587,
   username: System.get_env("GMAIL_SMTP_USERNAME"),
   password: System.get_env("GMAIL_SMTP_PASSWORD"),
-  tls: :if_available,
-  ssl: true,
+  tls: :always,
+  ssl: false,
   retries: 1
 
 # Configures Elixir's Logger

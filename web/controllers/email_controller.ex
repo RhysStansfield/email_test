@@ -4,6 +4,6 @@ defmodule EmailTest.EmailController do
   def create(conn, %{ "email_address" => email_address }) do
     EmailTest.Email.derp_email(email_address)
     |> EmailTest.Mailer.deliver_now
-    render(conn, {})
+    render(conn, "create.json")
   end
 end
